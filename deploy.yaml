@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: obi
+spec:
+  replicas: 3  # Number of replicas
+  selector:
+    matchLabels:
+      app: tab
+  template:
+    metadata:
+      labels:
+        app: tab
+    spec:
+      containers:
+      - name: con1
+        image: abcdata/test:latest   # Replace with your Docker image
+        ports:
+        - containerPort: 5000  # Application listens on port 80
