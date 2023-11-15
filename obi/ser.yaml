@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80        # Port on the service
       targetPort: 5000 # Port on the pod
-  type: LoadBalancer
+  type: NodePort
