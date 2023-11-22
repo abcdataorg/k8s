@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: con1
-        image: abcdata/test:
+        image: abcdata/test:1.5
         ports:
         - containerPort: 5000  # Application listens on port 80
